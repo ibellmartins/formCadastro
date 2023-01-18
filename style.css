@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    text-align: center;
+}
+body{
+    font-family: 'ABeeZee', sans-serif;
+    text-align: center;
+    background-color: rgba(218, 211, 211, 0.946);
+}
+
+form{
+    height: 70%;
+    width: 40%;
+    background-color: rgb(241, 241, 247);
+    position: absolute;
+    padding: 12px;
+    margin-top: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 18px;
+    transition: 0.5s;
+    border-radius: 25px;
+}
+form:hover{
+    box-shadow: 2px 3px 3px rgb(45, 42, 42);
+    background-color: rgb(41, 39, 39);
+    color: white;
+
+}
+form input{
+    display:block;
+    padding: 7px 10px;
+    width: 100%;
+    height: 6%;
+    text-align: left;
+    border-radius:0px;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+    background-color: rgb(221, 216, 216);
+    font-size: 15px;
+    transition: 0.5s;   
+    cursor: pointer;
+    border-radius: 25px;
+}
+form input:hover{
+    background-color: rgb(105, 103, 103);
+    color: white;
+}
+form input[type=submit]{
+    background-color: gray;
+    color: white;
+    margin-top: 5px; 
+    cursor: pointer;  
+    font-size: large;
+    height: auto;
+    text-align: center;
+    transition: 0.4s;
+}
+h3{
+    text-align: left;
+    margin-left: 50%;
+    transform: translate(-38%);
+    margin-top: 65px;
+    margin-bottom: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(11, 10, 10);
+}
+h3::after{    /*linha embaixo do texto*/
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 0.3rem;
+    background-color: rgb(64, 57, 57);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+
+}
+button{
+    all: unset;
+    cursor: pointer;
+    margin: 5px;
+}
+form input[type="submit"]:hover{
+    background-color: rgb(64, 57, 57);
+}
+.otherLogin{
+    max-width: 1000px;  /*alinhar os buttons com img no centro do form*/
+    margin-top: 5px;
+}
+form i{
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    margin-left: 0;
+    color: rgb(101, 95, 95);
+}
+form::after{
+    content:'';
+    display: block;
+    width: 35.6rem;
+    height: 0.5rem;
+    background-color: rgb(64, 57, 57);
+    margin: 0 auto;
+    margin-top: 25px;
+    position: absolute;
+    border-radius: 10px;
+}
